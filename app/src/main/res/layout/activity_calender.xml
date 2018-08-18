@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/sunday_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Sunday"
+        android:onClick="showSunday">
+    </Button>
+
+    <Button
+        android:id="@+id/monday_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Monday"
+        android:onClick="showMonday">
+    </Button>
+
+    <Button
+        android:id="@+id/tuesday_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Tuesday"
+        android:onClick="showTuesday">
+    </Button>
+
+    <Button
+        android:id="@+id/wednesday_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Wednesday"
+        android:onClick="showWednesday">
+    </Button>
+
+    <Button
+        android:id="@+id/thursday_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Thursday"
+        android:onClick="showThursday">
+    </Button>
+
+    <Button
+        android:id="@+id/friday_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Friday"
+        android:onClick="showFriday">
+    </Button>
+
+    <Button
+        android:id="@+id/saturday_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Saturday"
+        android:onClick="showSaturday">
+    </Button>
+
+    <Button
+        android:id="@+id/calendar_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Calendar"
+        android:onClick="showCalendar" >
+    </Button>
+
+</LinearLayout>

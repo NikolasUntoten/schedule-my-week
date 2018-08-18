@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/day_layout">
+
+    <Button
+        android:id="@+id/back_button"
+        android:text="Back"
+        android:onClick="finish"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+    </Button>
+
+    <Button
+        android:id="@+id/new_event"
+        android:text="New Event"
+        android:onClick="newEvent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/back_button">
+    </Button>
+
+</RelativeLayout>

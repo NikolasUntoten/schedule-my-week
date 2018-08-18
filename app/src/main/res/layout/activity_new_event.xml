@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:text="Event Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_text_notes"
+        android:text="Event Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_name">
+    </EditText>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/notification_bool"
+        android:text="Notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_notes"/>
+
+    <TextView
+        android:id="@+id/event_start_title"
+        android:text="Event Start time"
+        android:textSize="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_bool">
+    </TextView>
+
+    <TimePicker
+        android:id="@+id/start_time"
+        android:timePickerMode="spinner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/event_start_title">
+    </TimePicker>
+
+    <TextView
+        android:id="@+id/event_end_title"
+        android:text="Event End time"
+        android:textSize="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/start_time" >
+    </TextView>
+
+    <TimePicker
+        android:id="@+id/end_time"
+        android:timePickerMode="spinner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/event_end_title" >
+    </TimePicker>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/sun_bool"
+        android:text="S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_time"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/mon_bool"
+        android:text="M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_time"
+        android:layout_toRightOf="@id/sun_bool"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/tues_bool"
+        android:text="T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_time"
+        android:layout_toRightOf="@id/mon_bool"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/wed_bool"
+        android:text="W"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_time"
+        android:layout_toRightOf="@id/tues_bool"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/thurs_bool"
+        android:text="T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_time"
+        android:layout_toRightOf="@id/wed_bool"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/fri_bool"
+        android:text="F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_time"
+        android:layout_toRightOf="@id/thurs_bool"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/sat_bool"
+        android:text="S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end_time"
+        android:layout_toRightOf="@id/fri_bool"
+        />
+
+    <Button
+        android:id="@+id/done_button"
+        android:text="Done"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:onClick="done"
+        android:layout_below="@id/sat_bool"/>
+
+</RelativeLayout>
